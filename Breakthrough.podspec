@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name         = "Breakthrough"
 s.version      = "0.0.1"
-s.summary      = '闯关路径绘制控件'
+s.summary      = '图片轮播的控件'
 s.homepage     = "https://github.com/suxiangxiao/Breakthrough"
 s.license      = 'MIT'
 s.author       = {'kbo' => '13751882497.com'}
