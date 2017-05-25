@@ -137,7 +137,7 @@
 
 -(void)drawPoint{
     
-    __weak typeof(self) weakSelf = self;
+    __unsafe_unretained typeof(self) weakSelf = self;
     [self.pointArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         float width, height, offsetY, pointY, pointX;
@@ -168,7 +168,7 @@
         _bgScrollView.pagingEnabled = NO;
         [self addSubview:_bgScrollView];
         
-        __weak typeof(self) weakSelf = self;
+        __unsafe_unretained typeof(self) weakSelf = self;
         [_bgScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.left.right.mas_equalTo(weakSelf);
         }];
